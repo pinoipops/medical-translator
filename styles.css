@@ -1,0 +1,118 @@
+* {
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #2196f3;
+    font-weight: 600;
+    text-align: center;
+}
+h2 {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -10px; /* Adjust spacing */
+    margin-bottom: 20px;
+}
+select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+#symptomsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Wider buttons */
+    gap: 15px; /* Increased gap */
+    margin-top: 20px;
+}
+
+.symptom-btn {
+    padding: 15px; /* Bigger padding */
+    background-color: #e1f5fe;
+    border: 1px solid #81d4fa;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 16px; /* Larger font size */
+}
+
+.symptom-btn:hover {
+    background-color: #81d4fa;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+.symptom-btn {
+    padding: 12px;
+    background-color: #e1f5fe;
+    border: 1px solid #81d4fa;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.symptom-btn:hover {
+    background-color: #81d4fa;
+    transform: translateY(-1px);
+}
+#translationResult {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+}
+.speak-btn {
+    background-color: #2196f3;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+.speak-btn:hover {
+    background-color: #1976d2;
+}
+#notificationArea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+}
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+@media (max-width: 600px) {
+    #symptomsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .symptom-btn {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Translator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Translator</h1>
+        <h2>by Esphynol JAMALUDDIN</h2> <!-- Added author name here -->
+
+        <!-- Language Selection -->
+        <label for="patientLanguage">Patient Language:</label>
+        <select id="patientLanguage">
+            <option value="bn">Bengali (বাংলা)</option>
+            <option value="my">Myanmar (မြန်မာ)</option>
+            <option value="ne">Nepali (नेपाली)</option>
+        </select>
+
+        <!-- Notification Area -->
+        <div id="notificationArea"></div>
+
+        <!-- Symptoms/Complaints -->
+        <h3>Select Symptoms or Complaint:</h3>
+        <div id="symptomsGrid"></div>
+
+        <!-- Translation Result -->
+        <div id="translationResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
